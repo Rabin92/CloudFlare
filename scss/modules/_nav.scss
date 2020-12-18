@@ -1,0 +1,58 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.nav-sm {
+  background: rgb(80, 77, 77);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  z-index: 10000;
+  width: 0;
+  text-align: $text--center;
+  transition: width 0.6s ease-in-out;
+
+  @include e(close) {
+    font-size: em(35px);
+    cursor: $cursor;
+    margin-bottom: em(15px);
+    @include flexy($j-content: center, $a-items: null);
+    opacity: 0.6;
+
+    &:hover {
+      transform: rotate(180deg);
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  @include e(list) {
+    text-transform: uppercase;
+    padding: em(5px);
+    margin-bottom: em(5px);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.nav-lg {
+  display: none;
+
+  @media #{$break--l} {
+    display: initial;
+  }
+
+  @include e(list) {
+    display: inline-block;
+    padding-left: em(15px);
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

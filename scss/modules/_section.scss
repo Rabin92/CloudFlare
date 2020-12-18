@@ -1,0 +1,82 @@
+// ==========================================================================
+// Section
+// ==========================================================================
+
+.grid-container {
+  display: grid;
+
+  @media #{$break--l} {
+    height: 80vh;
+    align-items: center;
+  }
+}
+
+.section {
+  display: grid;
+
+  @media #{$break--l} {
+    max-width: 850px;
+  }
+
+  @media #{$break--s} {
+    grid-template-columns: 1.5fr 2fr;
+  }
+
+  @include e(header) {
+    background: $white url(#{$path--rel}/bg-image.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: $text--center;
+
+    @media #{$break--s} {
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+  }
+
+  @include e(overlay) {
+    background: $background-overlay;
+    padding: $gutters;
+
+    @media #{$break--s} {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+
+      // @media #{$break--s} {
+      //   padding: 2em 2em 0;
+      // }
+    }
+  }
+
+  @include e(logo) {
+    height: em(95px);
+    fill: $white;
+  }
+
+  @include e(title) {
+    margin: 0;
+    font-size: em(24px);
+
+    @include m(col) {
+      font-weight: $font-weight--medium;
+    }
+  }
+
+  @include e(list) {
+    text-align: left;
+    margin-top: em(30px);
+  }
+
+  @include e(item) {
+    margin-bottom: em(10px);
+    margin-left: em(20px);
+    list-style-type: disc;
+  }
+
+  @include e(form) {
+    border: 1px solid red;
+  }
+}

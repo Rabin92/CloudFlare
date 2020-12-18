@@ -1,0 +1,57 @@
+// ==========================================================================
+// Form
+// ==========================================================================
+
+.form {
+  padding: $gutters;
+  background: $white;
+  color: $frenchgray;
+
+  @media #{$break--s} {
+    padding: 2em 2em 0;
+    box-shadow: $boxShadow;
+  }
+
+  @include e(title) {
+    margin: 0;
+    font-size: em(50px);
+  }
+
+  @include e(userinput) {
+    padding-top: em(20px);
+
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px solid $color-border;
+    border-left: none;
+    background: none;
+    outline: none;
+
+    &:hover {
+      border-bottom: 3px solid $dodgerblue;
+      transition: border-bottom 0.5s ease-in-out;
+    }
+  }
+
+  @include e(label) {
+    margin-top: em(90px);
+    font-size: em(11px);
+  }
+
+  @include e(footer) {
+    @include flexy($j-content: space-between);
+    height: 25vh;
+  }
+
+  @include e(icon) {
+    height: em(25px);
+    padding-left: em(8px);
+    cursor: $cursor;
+  }
+
+  @include e(span) {
+    float: right;
+    font-size: em(11px);
+  }
+}

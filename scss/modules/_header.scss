@@ -1,0 +1,48 @@
+// ==========================================================================
+// Header
+// ==========================================================================
+
+.header {
+  @include flexy($j-content: space-between);
+  padding: em(20px);
+
+  @include e(logo-wrap) {
+    @include flexy();
+  }
+
+  @include e(logo) {
+    height: em(45px);
+    fill: $color-logo;
+  }
+
+  @include e(title) {
+    font-size: em(22px);
+    padding-left: em(10px);
+
+    @include m(col) {
+      font-weight: $font-weight--medium;
+    }
+  }
+
+  @include e(menu-icon) {
+    cursor: $cursor;
+
+    @media #{$break--l} {
+      display: none;
+    }
+  }
+
+  @include e(first-line) {
+    @extend %menu;
+    margin-bottom: 0.4em;
+  }
+
+  @include e(middle-line) {
+    @extend %menu;
+    margin-bottom: 0.4em;
+  }
+
+  @include e(third-line) {
+    @extend %menu;
+  }
+}

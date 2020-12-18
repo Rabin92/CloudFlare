@@ -1,0 +1,33 @@
+// ==========================================================================
+// Button
+// ==========================================================================
+
+.btn {
+  background: $color-button;
+  color: $white;
+  width: 100%;
+  padding: em(5px);
+  margin-top: em(15px);
+
+  @include m(navlrg) {
+    border-radius: 20px;
+    width: 40%;
+    max-width: 130px;
+    margin-top: initial;
+    box-shadow: $boxShadow;
+    display: none;
+    text-transform: uppercase;
+
+    @media #{$break--l} {
+      display: initial;
+    }
+  }
+
+  @include m(form) {
+    border-radius: 20px;
+    width: 40%;
+    max-width: 130px;
+    margin-top: initial;
+    box-shadow: $boxShadow;
+  }
+}

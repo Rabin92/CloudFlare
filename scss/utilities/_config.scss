@@ -1,0 +1,69 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--primary: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap';
+$font-family--primary: 'Open Sans', sans-serif;
+
+$font-url--secondary: 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap';
+$font-family--secondary: 'Raleway', sans-serif;
+
+// Font Weights
+
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+
+// Descriptive Base Colors
+
+$mako: #41444c;
+$dodgerblue: #228cee;
+$frenchgray: #c2c4ca;
+
+// Accent
+
+$white: #fff;
+$black: #000;
+
+// Color Usage
+
+$color-body: $mako;
+$color-logo: $dodgerblue;
+$color-button: $dodgerblue;
+$color-border: $frenchgray;
+$background-overlay: rgba(25, 104, 183, 0.85);
+
+// Box shadow
+
+$boxShadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+// Text
+
+$base__font-size: 16px;
+$base__line: 24px;
+$text--center: center;
+
+// Border radius
+
+$br--default: 0.4em;
+$br--radius: 5px;
+
+// Path to Assets
+
+$path--rel: '../images';
+
+// Gutters
+
+$gutters: 1em;
+
+// Cursor
+
+$cursor: pointer;
+
+// Media queries
+
+$break--s: '(min-width: 600px)';
+$break--m: '(min-width: 768px)';
+$break--l: '(min-width: 1024px)';
