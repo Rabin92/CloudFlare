@@ -503,6 +503,12 @@ button {
   font-size: 0.6875em;
 }
 
+#error {
+  margin-top: 0.625em;
+  color: #ff0000;
+  font-size: 0.9375em;
+}
+
 .btn {
   background: #228cee;
   color: #fff;
