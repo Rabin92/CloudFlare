@@ -62,3 +62,8 @@ button {
   outline: 0;
   border: none;
 }
+
+input[type='text'],
+input[type='password'] {
+  color: $black;
+}

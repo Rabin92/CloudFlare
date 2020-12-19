@@ -1,8 +1,8 @@
 const menu = document.querySelector('#js-menu');
 const nav = document.querySelector('#js-nav');
 const form = document.querySelector('form');
-const username = document.querySelector('#username');
-const password = document.querySelector('#password');
+let username = document.querySelector('#username');
+let password = document.querySelector('#password');
 let error = document.querySelector('#error');
 
 // Nav menu
@@ -26,14 +26,20 @@ form.addEventListener('submit', e => {
 
   if (username.value === '') {
     msg.push('Please enter your username/email.');
+    username.style.borderBottom = '2px solid #ff0000';
+  } else {
+    username.style.borderBottom = '';
   }
 
   if (password.value.length <= 6) {
     msg.push('Password must be longer than 6 characters.');
+    password.style.borderBottom = '2px solid #ff0000';
   } else if (password.value === 'password') {
     msg.push('Password cannot be password.');
   } else if (password.value.length >= 20) {
     msg.push('Password must not be longer than 20 characters.');
+  } else {
+    password.style.borderBottom = '';
   }
 
   // show in a new line
