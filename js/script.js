@@ -27,6 +27,7 @@ form.addEventListener('submit', e => {
   if (username.value === '') {
     msg.push('Please enter your username/email.');
     username.style.borderBottom = '2px solid #ff0000';
+    username.style.transition = 'border-bottom 0.5s ease-in-out';
   } else {
     username.style.borderBottom = '';
   }
@@ -34,6 +35,7 @@ form.addEventListener('submit', e => {
   if (password.value.length <= 6) {
     msg.push('Password must be longer than 6 characters.');
     password.style.borderBottom = '2px solid #ff0000';
+    password.style.transition = 'border-bottom 0.5s ease-in-out';
   } else if (password.value === 'password') {
     msg.push('Password cannot be password.');
   } else if (password.value.length >= 20) {
