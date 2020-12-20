@@ -32,14 +32,10 @@ form.addEventListener('submit', e => {
     username.style.borderBottom = '';
   }
 
-  if (password.value.length <= 6) {
-    msg.push('Password must be longer than 6 characters.');
+  if (password.value === '') {
+    msg.push('Password enter your password.');
     password.style.borderBottom = '2px solid #ff0000';
     password.style.transition = 'border-bottom 0.5s ease-in-out';
-  } else if (password.value === 'password') {
-    msg.push('Password cannot be password.');
-  } else if (password.value.length >= 20) {
-    msg.push('Password must not be longer than 20 characters.');
   } else {
     password.style.borderBottom = '';
   }
