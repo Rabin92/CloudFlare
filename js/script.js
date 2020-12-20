@@ -34,7 +34,7 @@ form.addEventListener('submit', e => {
   }
 
   if (password.value === '') {
-    msg.push('Password enter your password.');
+    msg.push('Please enter your password.');
     password.style.borderBottom = '2px solid #ff0000';
     password.style.transition = 'border-bottom 0.5s ease-in-out';
   } else {
