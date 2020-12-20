@@ -29,7 +29,8 @@ form.addEventListener('submit', e => {
     username.style.borderBottom = '2px solid #ff0000';
     username.style.transition = 'border-bottom 0.5s ease-in-out';
   } else {
-    username.style.borderBottom = '';
+    username.style.borderBottom = '2px solid #008000';
+    username.style.transition = 'border-bottom 0.5s ease-in-out';
   }
 
   if (password.value === '') {
@@ -37,7 +38,8 @@ form.addEventListener('submit', e => {
     password.style.borderBottom = '2px solid #ff0000';
     password.style.transition = 'border-bottom 0.5s ease-in-out';
   } else {
-    password.style.borderBottom = '';
+    password.style.borderBottom = '2px solid #008000';
+    password.style.transition = 'border-bottom 0.5s ease-in-out';
   }
 
   // show in a new line
