@@ -459,6 +459,10 @@ input[type=password] {
   border: 1px solid red;
 }
 
+#test {
+  rotate: 10deg;
+}
+
 .form {
   padding: 1em;
   background: #fff;
